@@ -1,4 +1,4 @@
-#calmana
+# calmana
 + 動作環境
   + ruby 2.5.5
   + bundle 2.1.4
@@ -16,15 +16,22 @@
   ```
   $ bundle install --path vendor/bundle
   ```
-
-+ aouthorize
+  
++ Run
   ```
-  $ bundle exec ruby channel.rb
+  $ bundle exec ruby calmana.rb
   ```
   この際，Google Calendar API の credentials.json が必要になる．
   + [Google API console](https://console.developers.google.com)
   
-  認証に成功すると，`Aouthorize Success!`と表示される．
+
++ make channel
+  + `channel.rb` の CALLBACK_URL と CALENDAR_ID を記述する．（直書きになるためここは要修正）
+
+  + 実行
+    ```
+    $ bundle exec ruby channel.rb
+    ```
 
 # HTTPS の設定
 + 前提
